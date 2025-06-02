@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Scorp SW</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            background-color: #0a0a23;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .about-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            color: #0077cc;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">Scorp SW</div>
+
+        <!-- Hamburger icon for small screens -->
+        <div class="menu-icon" onclick="showSidebar()">
+            &#9776;
+        </div>
+
+        <!-- Normal nav links -->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="product.html">product</a></li>
+
+                <li><a href="#">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar for small screens -->
+    <ul class="sidebar" id="sidebar">
+        <li onclick="hideSidebar()">✖</li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+    </ul>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Scorp SW</h2>
+        <p><strong>Scorp SW</strong> is a trusted online destination for high-quality digital devices and accessories.
+            We are passionate about making the latest in tech accessible, affordable, and hassle-free for everyone.</p>
+
+        <p>From smartphones and tablets to smartwatches and audio gear, our curated selection features only the best and
+            most reliable devices from leading global brands. At Scorp SW, we don’t just sell products — we deliver
+            convenience, innovation, and peace of mind with every order.</p>
+
+        <p>We are committed to providing exceptional customer service, fast shipping, and secure shopping so that you
+            can shop with confidence. Our platform is designed to make your online shopping experience smooth, safe, and
+            enjoyable.</p>
+
+        <p><strong>Mission:</strong> To bring the future of digital technology closer to everyday people through quality
+            products and outstanding service.</p>
+
+        <p><strong>Thank you for choosing Scorp SW — your go-to shop for the latest digital devices.</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Scorp SW. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

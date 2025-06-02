@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="style.css"></a>
+</head>
+
+<body>
+    <div class="cart-page hidden">
+        <h2>Your Cart</h2>
+        <ul class="cart-items"></ul>
+        <div class="cart-actions">
+            <button class="close-cart">Close</button>
+            <button class="purchase-cart">Purchase</button>
+        </div>
+        <div class="purchase-form hidden">
+            <h3>Complete Your Purchase</h3>
+            <p>Total Amount: <span class="total-amount"></span> ETB</p>
+            <form id="purchase-form" class="user-info">
+                <div> <label for="password">password:</label>
+                    <input type="text" id="password" name="password" required>
+                </div>
+
+                <div><label for="credit-card">Credit Card Number:</label>
+                    <input type="text" id="credit-card" name="credit-card" required>
+                </div>
+                <button type="submit">Confirm Purchase</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
